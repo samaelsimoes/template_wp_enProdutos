@@ -1,0 +1,166 @@
+/**
+  * Autor: Samael Pereira Simões
+  * Ano de desenvolvimento 04-07-2018
+*/
+
+.custom-banner-1 {
+	background-color: #265369;
+    height: 20px;
+}
+
+.custom-banner-2-padding-rede {
+	padding-top: 7px;
+    text-align: center;
+}
+.custom-banner-2-cor {
+	background: linear-gradient(to bottom, #fffffff5 0%, #e8e8e8cf 57%, #cbd2da 100%);
+}
+.custom-banner-2-img1 img {
+	width: auto;
+    height: 30px;
+}
+.custom-banner-2-img2 img {
+	width: auto;
+    height: 25px;
+}
+.custom-banner-2-padding1 {
+	padding-top: 26px;
+    padding-bottom: 10px;
+}
+.custom-banner-2-padding {
+	padding-top: 10px;
+	text-align: center;
+}
+.custom-banner-2-padding-cols {
+	padding-bottom: 20px;
+}
+.custom-rede-social img {
+	height: 30px;
+    width: auto;
+}
+.custom-text-banner-2 {
+	text-align: center;
+}
+
+.custom-menu-header-banner-2 ul a:hover, .custom-menu-header-banner-2.active {
+	border-radius: 8px;
+	background-color: #27a9ca;
+	color: rgb(255, 255, 255) !important;
+	font-weight: 700; 
+}
+
+
+
+.custom-header-banner-3 ul a:hover, .custom-header-banner-3.active{
+	border-radius: 8px;
+	background-color: #27a9ca;
+	color: rgb(255, 255, 255) !important;
+	font-weight: 700; 
+}
+.custom-img-logo-banner-3 img{
+	width: auto;
+    height: 140px;
+}
+
+.custom-text-menus a{
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #535b6c;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 14px !important;
+	font-family: 'Raleway';
+	text-align: center;
+}
+
+.custom-text h1 {
+	font-size: 40px;
+    line-height: 40px;
+    color: #265369;
+    text-transform: uppercase;
+    font-weight: 400;
+	font-family: 'Raleway';
+	text-align: center;
+}
+.custom-text p {
+	color: #575757;
+    font-size: 15px;
+    line-height: 9px;
+    font-weight: 400 !important;
+    font-family: 'Raleway';
+}
+.custom-text-card p {
+	font-size: 17px;
+    line-height: 20px;
+}
+.custom-text-card h1{
+	line-height: 40px;
+	font-size: 25px;
+}
+.custom-padding-card {
+	padding-bottom: 25px;
+}
+
+.custom-height-card {
+	height: 380px;
+}
+.custom-padding-section {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.custom-padding-produtos{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.custom-banner-3-cor{
+	background: linear-gradient(to bottom, #ffffff 0%, #ffffff 57%, #eaeaea 100%);
+}
+
+.custom-img-card img {
+	height: 250px;
+    width: auto;
+}
+
+.custom-efeito-titulo-menu {
+	width: 30%;
+    border: none;
+    border-bottom: 1px solid #265369;
+}
+
+.custom-efeito-titulo-menu-inf {
+	width: 60%;
+    border: none;
+	border-bottom: 1px solid #265369;
+}	
+
+.custom-banner-4-cor {
+	background: linear-gradient(to bottom, #ffffff 0%, #ffffff 57%, #eeeeee 100%);
+}
+.custom-text h2 {
+    font-size: 16px;
+    line-height: 15px;
+    color: #265369;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+.custom-banner-4-cor {
+	background: linear-gradient(to bottom, #fffffff5 0%, #e8e8e8cf 57%, #cbd2da 100%);
+}
+.custom-infs {
+	padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.custom-footer{
+	background: linear-gradient(to bottom, #265369eb 0%, #265369cc 40%, #265369 100%);
+}
+
+.custom-padding-footer {
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
