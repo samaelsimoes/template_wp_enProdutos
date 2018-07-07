@@ -24,8 +24,7 @@
     height: 25px;
 }
 .custom-banner-2-padding1 {
-	padding-top: 26px;
-    padding-bottom: 10px;
+	padding-top: 15px;
 }
 .custom-banner-2-padding {
 	padding-top: 10px;
@@ -49,17 +48,23 @@
 	font-weight: 700; 
 }
 
-
-
 .custom-header-banner-3 ul a:hover, .custom-header-banner-3.active{
 	border-radius: 8px;
 	background-color: #27a9ca;
 	color: rgb(255, 255, 255) !important;
 	font-weight: 700; 
 }
+
+.custom-menu-produto li a:hover, .custom-menu-produto.active{
+	border-radius: 8px;
+	background-color: #27a9ca;
+	color: rgb(255, 255, 255) !important;
+	font-weight: 700; 
+}
+
 .custom-img-logo-banner-3 img{
-	width: auto;
-    height: 140px;
+    width: 120px;
+    height: 110px;
 }
 
 .custom-text-menus a{
@@ -103,7 +108,7 @@
 }
 
 .custom-height-card {
-	height: 380px;
+	height: 340px;
 }
 .custom-padding-section {
 	padding-top: 15px;
@@ -132,12 +137,9 @@
 .custom-efeito-titulo-menu-inf {
 	width: 60%;
     border: none;
-	border-bottom: 1px solid #265369;
+	border-bottom: 1px solid #fff;
 }	
 
-.custom-banner-4-cor {
-	background: linear-gradient(to bottom, #ffffff 0%, #ffffff 57%, #eeeeee 100%);
-}
 .custom-text h2 {
     font-size: 16px;
     line-height: 15px;
@@ -152,7 +154,7 @@
 	background: linear-gradient(to bottom, #fffffff5 0%, #e8e8e8cf 57%, #cbd2da 100%);
 }
 .custom-infs {
-	padding-top: 25px;
+	padding-top: 40px;
     padding-bottom: 15px;
 }
 
@@ -163,4 +165,41 @@
 .custom-padding-footer {
 	padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.custom-menu-produtos {
+	padding-top: 5px;
+}
+
+.custom-menu-produtos p {
+	line-height: 20px;
+}
+
+@media only screen and (max-width: 748px) {
+	.custom-text p {
+		font-size: 15px;
+		line-height: 17px;
+	}
+
+	.custom-esconde-texto {
+		display: none!important;
+	}
+}
+
+.card{
+	background-color: #f2f2f2!important;
+}
+
+
+.custom-banner-5-cor {
+	background: linear-gradient(to bottom, #265369eb 0%, #265369cc 40%, #265369 100%);
+}
+.custom-text-infs h2 {
+	font-size: 16px;
+    line-height: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Raleway';
+    text-align: center;
 }

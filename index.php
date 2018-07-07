@@ -3,36 +3,45 @@
     <section class="custom-text custom-padding-section custom-banner-4-cor">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2" style="text-align: center; padding-bottom: 25px;">                
-                    <div class="row">
-                        <div class="col">
-                            <div class="">
-                                <h1> Categorias </h1>
+                <div class="col-sm-2" style="padding-bottom: 25px;"> 
+                    <div class="border">               
+                        <div class="row"  style="padding-top:  20px;">
+                            <div class="col">
+                                <h2 style="font-weight: bold;"> Mesas e acessórios </h2>   
+                            </div>
+                        </div>        
+                        <div class="row">
+                            <div class="col  ">
+                                <nav class="nav flex-column custom-menu-produto">
+
+                                    <?php 
+                                        $items_menu_produtos = wp_get_nav_menu_items('menu-produtos');
+                                        if (!empty($items_menu_produtos)) {
+                                            foreach ($items_menu_produtos as $menu_produto) {
+                                    ?>
+                                        <li class="nav-item">
+
+                                            <a href="<?php echo $menu_produto->url; ?>" class="nav-link " title="<?php echo $menu_produto->title; ?>">
+                                                <?php echo $menu_produto->title; ?>
+                                            </a>
+                                        </li>
+                                    <?php 
+                                        };
+                                    };
+                                    ?>
+                                </nav>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="container">
+                                <div class="col custom-menu-produtos border-top">
+                                <p><h2> EnProdutos </h2></p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>    
+                        </div>    
                     </div>    
-                    <div class="row ">
-                        <div class="col ">
-                            <nav class="nav flex-column ">
-
-                                <?php 
-                                    $items_menu_produtos = wp_get_nav_menu_items('menu-produtos');
-                                    if (!empty($items_menu_produtos)) {
-	                                    foreach ($items_menu_produtos as $menu_produto) {
-                                ?>
-                                    <li class="nav-item">
-
-                                        <a href="<?php echo $menu_produto->url; ?>" class="nav-link" title="<?php echo $menu_produto->title; ?>">
-                                            <?php echo $menu_produto->title; ?>
-                                        </a>
-                                    </li>
-                                <?php 
-                                    };
-                                };
-                                ?>
-                            </nav>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-sm-10">
@@ -69,12 +78,10 @@
                             <div class=" col-sm-3 custom-padding-card ">
                                 <div class="card custom-img-card">
                                     <img class="card-img-top" src="<?php echo get_field("imagem") ?>" alt="<?php the_title();?>" >
-                                    <div class="card-body custom-text-card custom-height-card">
+                                    <div class="card-body custom-text-card custom-height-card" style="padding: 15px;">
 
                                         <a href="<?php the_permalink();?>">
-                                            <h5 class="card-title">
-                                                <h1><?php the_title();?></h1>
-                                            </h5>
+                                            <h1 class="card-title"><?php the_title();?></h1>
                                         </a>
 
                                         <p class="text-truncate">
@@ -109,7 +116,7 @@
         </div>
     </section>
 
-    <section class="custom-text custom-banner-4-cor">
+    <section class="custom-text-infs custom-banner-5-cor ">
         <div class="container">
             <div class="row padding-menus custom-infs">
                 <div class="col">
@@ -128,7 +135,7 @@
         </div>
     </section>
 
-    <section class="">
+    <section class="custom-banner-4-cor">
         <div class="row">
             <div class="col">
                 <div id="produtosSlider" class="carousel slide" data-ride="carousel">
@@ -178,9 +185,9 @@
                                         $c++;
                                         $thumb = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
                         ?>                
-                        <div class="carousel-item <?php if( $c == 1 ) { echo 'active'; };?>">
+                        <div class="carousel-item  <?php if( $c == 1 ) { echo 'active'; };?>">
                             <img class="d-block w-100" src="<?php echo get_field("imagem") ?>" alt="<?php the_title(); ?>" >
-                            <div class="container">
+                            <div class="container custom-esconde-texto">
                                 <div class="carousel-caption text-left custom-carrousel-color">
                                     <a href="#">
                                         <h1><?php the_title(); ?></h1>
