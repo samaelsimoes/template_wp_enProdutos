@@ -3,10 +3,10 @@
 
 	$category = get_the_category(); 
 	$id =  $category[0]->cat_ID;
-
-
 	get_header(); 
 ?>
+<?php include('section-inf.php') ?>
+
 <ul>
 	<?php
 		global $post;
@@ -22,8 +22,5 @@
 			</a></li>
 <?php endforeach; ?>
 </ul>
-
-
-<?php include('footer.php') ?>
 
 <?php get_footer(); ?> 

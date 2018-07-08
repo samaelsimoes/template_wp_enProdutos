@@ -1,5 +1,5 @@
-<section class="custom-footer">
-    <div class="container custom-padding-footer">
+<section class="custom-color-footer">
+    <div class="container">
         <div class='row custom-padding-footer'>
             <div class="col-md-4">
                 <div class="row">

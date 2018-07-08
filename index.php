@@ -2,21 +2,6 @@
 
 <?php include('section-inf.php') ?>
 
-
-    <section class="section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-
-
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
-        </div>    
-    </section>    
-
     <section class="custom-text custom-padding-section custom-banner-4-cor custom-produtos">
         <div class="container-fluid">
             <div class="row">
@@ -34,7 +19,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="row custom-padding-produtos">
                                             <div class="col">
                                                 <nav class="nav flex-column custom-menu-produto">
@@ -129,7 +114,7 @@
                                     
                                         $thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));        
                         ?>
-                            <div class="col-md-3 custom-img-produtos custom-col-produtos">
+                            <div class="col-md-3 custom-img-produtos custom-col-produtos ">
                                 <div class="border">                                    
                                     <div class="row">
                                         <div class="col">
@@ -160,7 +145,7 @@
                                                 </p>
 
                                                 <p>
-                                                    <span> Valor: </span>
+                                                    <span> Valor: R$</span>
                                                     <?php echo get_field("preco") ?>
                                                 </p>    
                                                 <p>
