@@ -1,18 +1,21 @@
-<section class="section">
-	<aside id="sidebar" role="complementary">
-		<div class="row custom-banner-branco ">
-			<div class="col space-vertical custom-tamanho-conteudo padding-vertical-small">
-					
-				<div class="space-vertical custom-tamanho2 align-center">
-					
-					<?php if (is_active_sidebar('primary-widget-area')) : ?> <!-- Categoria --> 
-					<?php dynamic_sidebar('primary-widget-area');?>
-				</div>
-			</div>
+<nav class="nav custom-menu-produto">
+	<div class="card">
+		<div class="card-body">	
+			<?php 
+				$items_menu_produtos = wp_get_nav_menu_items('menu-produtos');
+				if (!empty($items_menu_produtos)) {
+					foreach ($items_menu_produtos as $menu_produto) {
+				?>
+				<li class="nav-item">
+
+					<a href="<?php echo $menu_produto->url; ?>" class="nav-link " title="<?php echo $menu_produto->title; ?>">
+						<?php echo "- ". $menu_produto->title; ?>
+					</a>
+				</li>
+				<?php 
+					};
+				};
+			?>
 		</div>
-			
-		<footer class="section footer"></footer>
-			
-		<?php endif; ?>
-	</aside>
-</section>
+	</div>
+</nav>				

@@ -1,4 +1,9 @@
-
+<?php
+/**
+ * Template Name: Produtos
+ */
+	get_header();
+?>
 <section class="section padding-vertical-large">
 	<div class="row space-vertical">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

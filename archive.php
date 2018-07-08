@@ -20,7 +20,7 @@ get_header(); ?>
 			           $thumb = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 		?>
 			<div class="row">
-				<a href="<?php the_permalink();?>" class="item item-news">
+				<a href="<?php the_permalink();?>" class="item item-news"> ASDAS DASD
 					<div class="item-photo" style="background-image:url('<?php echo $thumb;?>');">
 						<div class="item-photo-hover"></div>
 					</div>

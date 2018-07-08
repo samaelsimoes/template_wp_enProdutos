@@ -11,20 +11,14 @@ function cc_mime_types($mimes) {
 
 add_filter('upload_mimes', 'cc_mime_types');
 
-
 //cria um menu de navegação
 register_nav_menus(
   array( 'responsive' => __( 'responsive', 'theme' ) )
 );
 
 register_nav_menus(
-  array( 'main-menu-top' => __( 'main-menu-top', 'theme' ) )
-);
-
-register_nav_menus(
   array( 'menu-produtos' => __( 'menu-produtos', 'theme' ) )
 );
-
 
 register_nav_menus(
   array( 'main-menu' => __( 'main-menu', 'theme' ) )
@@ -51,7 +45,6 @@ function theme_widgets_init() {
   'id' => 'primary-widget-area',
   'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
   'after_widget' => "</li>",
-  'before_title' => '<h3 class="widget-title">',
   'after_title' => '</h3>',
   ) );
 }
@@ -75,13 +68,12 @@ class Walker_Nav_Menu_Dropdown extends Walker_Nav_Menu{
   }
 }
 
+
 function custom_post_type_BannerSlide() {
-
   $labels = array(
-
     'name'                => _x( 'BannerSlide', 'Post Type General Name', 'text_domain' ),
     'singular_name'       => _x( 'BannerSlide', 'Post Type Singular Name', 'text_domain' ),
-    'menu_name'           => __( 'BannerSlide','text_domain' ),
+    'menu_name'           => __( 'Banner Slide','text_domain' ),
   );
 
   $args = array(
@@ -109,38 +101,38 @@ function custom_post_type_BannerSlide() {
 }
 add_action( 'init', 'custom_post_type_BannerSlide', 0 );
 
-function custom_post_type_produtos() {
+function custom_post_type_duvidasFrequentes() {
 
   $labels = array(
 
-    'name'                => _x( 'Produtos', 'Post Type General Name', 'text_domain' ),
-    'singular_name'       => _x( 'Produtos', 'Post Type Singular Name', 'text_domain' ),
-    'menu_name'           => __( 'Produtos','text_domain' ),
+    'name'                => _x( 'DuvidasFrequentes', 'Post Type General Name', 'text_domain' ),
+    'singular_name'       => _x( 'DuvidasFrequentes', 'Post Type Singular Name', 'text_domain' ),
+    'menu_name'           => __( 'Duvidas frequentes','text_domain' ),
   );
 
   $args = array(
 
-    'label'                 =>  __( 'Produtos', 'text_domain' ),
-    'description'           =>  __( 'Product information pages', 'text_domain' ),
-    'labels'                =>  $labels,
-    'taxonomies'            =>  array( ),
-    'hierarchical'          =>  false,
-    'public'                =>  true,
-    'show_ui'               =>  true,
-    'show_in_menu'          =>  true,
-    'show_in_nav_menus'     =>  true,
-    'show_in_admin_bar'     =>  true,
-    'menu_position'         =>  5,
-    'can_export'            =>  true,
-    'has_archive'           =>  true,
-    'exclude_from_search'   =>  false,
-    'publicly_queryable'    =>  true,
-    'capability_type'       =>  'page',
-    'supports'              =>  array('title', 'editor', 'post-formats')
+    'label'               => __( 'DuvidasFrequentes', 'text_domain' ),
+    'description'         => __( 'Product information pages', 'text_domain' ),
+    'labels'              => $labels,
+    'taxonomies'          => array( ),
+    'hierarchical'        => false,
+    'public'              => true,
+    'show_ui'             => true,
+    'show_in_menu'        => true,
+    'show_in_nav_menus'   => true,
+    'show_in_admin_bar'   => true,
+    'menu_position'       => 5,
+    'can_export'          => true,
+    'has_archive'         => true,
+    'exclude_from_search' => false,
+    'publicly_queryable'  => true,
+    'capability_type'     => 'page',
+    'supports'        => array('title', 'editor', 'post-formats')
   );
   
-  register_post_type( 'Produtos', $args );
+  register_post_type( 'DuvidasFrequentes', $args );
 }
-add_action( 'init', 'custom_post_type_produtos', 0 );
 
+add_action( 'init', 'custom_post_type_duvidasFrequentes', 0 );
 ?>

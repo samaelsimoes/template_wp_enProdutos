@@ -11,7 +11,7 @@
 
 			<h1><?php the_title();?></h1>		
 		</div>
-	</div>
+	</div> PAGE
 </section>
 <section class="section custom-section-content padding-vertical-large custom-banner-cinza">
 	<div class="row phone-space-vertical">
