@@ -21,10 +21,10 @@
 					$thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
 				?>			
 				<div class="row">
-					<div class="col custom-inf-produtos" style="padding: 0px;">
+					<div class="col-md-8 custom-inf-produtos" style="padding: 0px;">
 						<img class="" src="<?php echo get_field("imagem") ?>" alt="<?php the_title();?>" >
 					</div>
-					<div class="col custom-inf-produtos">	
+					<div class="col-md-4 custom-inf-produtos">	
 						<div class="row">
 							<div class="col">
 								<a>

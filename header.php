@@ -96,7 +96,7 @@
 				<div class="col-md-3 custom-banner-2-padding">
 					<div class="row  custom-banner-2">
 						<div class="col col-md-4">
-							<a href="#">
+							<a href="https://www.facebook.com/En-Produtos-416234488576856/">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/facebook.svg">
 							</a>
 						</div>
