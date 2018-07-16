@@ -1,45 +1,41 @@
-<section class="section custom-banner-3">
+<section class="section custom-banner-3 custom-submenu-infs">
     <div class="container">
         <div class="row custom-infs custom-logos" style="padding-top:25px;">
-            <div class="col">
-                <div class="row">
-                    <div class="col-md-1">
-                        <i class="fas fa-truck-moving"></i>
+            <div class="col-md-4">
+                <div class="row custom-inf-menu1">
+                    <div class="col-md-3">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/mesasinuca.png">
                     </div>
-                    <div class="col-md-11" style="padding-left: 35px;">
-                        <h3>Frete grátis para todo Brasil</h3>
+                    <div class="col-md-9" style="padding-left: 35px;">
+                        <h3>Frete Grátis para Regiões </h3>                        
+                        <p> Pr – Sc – Sp – Rs – Ms – Mg | Válido para Mesas </p>
+                        <p> MT e ES sob consulta. </p>
                     </div>    
-                </div>    
-                <div class="row">
-                    <hr class="custom-efeito-titulo-menu-inf">
-                </div>  
+                </div>            
             </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col-md-1">
-                        <i class="fas fa-dollar-sign"></i>
+            <div class="col-md-4">
+                <div class="row custom-inf-menu2">
+                    <div class="col-md-3">                    
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/tacoEbolinha.png">
                     </div>
-                    <div class="col-md-11">
-                        <h3>Compre sua mesa e pague somente na entrega.</h3>
-                        <h4></h4>
+                    <div class="col-md-9">
+                        <h3> Pagamento Seguro </h3>
+                        <p> Compre sua mesa e pague somente na entrega </p>
                     </div>    
                 </div>
-                <div class="row">
-                    <hr class="custom-efeito-titulo-menu-inf">
-                </div>    
             </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col-md-1">
-                        <i class="fas fa-credit-card"></i>
+            <div class="col-md-4">
+                <div class="row custom-inf-menu3">
+                    <div class="col-md-3">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/bolaSinuca.png">
                     </div>
-                    <div class="col-md-11" style="padding-left: 25px;">     
+                    <div class="col-md-9" style="padding-left: 25px;">     
                         <h3>Valores a vista é parcelado em até 12 x</h3>
+                        <p> Compre sua mesa e pague somente na entrega </p>
                     </div>
                 </div>    
                 <div class="row">
-                    <hr class="custom-efeito-titulo-menu-inf">
-                </div>  
+               
             </div>
         </div>
     </div>

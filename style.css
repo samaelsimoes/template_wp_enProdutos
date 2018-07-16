@@ -85,19 +85,19 @@
 	background: linear-gradient(to bottom, #44d9f391 0%, #27a0b5ba 40%, #2293a7 100%);
 }
 .custom-banner-3 h3 {
-	font-size: 15px;
+    font-size: 16px;
     line-height: 15px;
-    color: #ffffff;
+    color: #000000;
     text-transform: uppercase;
-	font-family: 'Raleway';
-	font-weight: bold;
-	text-align: left;
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-align: left;
 }
 
-.custom-banner-3 h4 {
-	font-size: 15px;
-    line-height: 15px;
-    color: #6f6868;
+.custom-banner-3 p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Raleway';
@@ -161,7 +161,7 @@
 }
 .custom-img-produtos img {
 	width: 100%;
-    height: 330px;
+    height: 300px;
 }
 
 .custom-padding-produtos {
@@ -245,4 +245,78 @@
 .custom-padding-footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.custom-text-footer p {
+	color: #fff;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400 !important;
+    font-family: 'Raleway';
+}
+.custom-text-footer a {
+	color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 200 !important;
+    font-family: 'Raleway';
+}
+
+.custom-inf-menu1 img {
+	height: 95px;
+    width: auto;
+}
+.custom-inf-menu2 img {
+	height: auto;
+    width: 80px;
+}
+.custom-inf-menu3 img {
+	height: auto;
+    width: 85px;
+}
+.section {
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.custom-paralax {
+	background-image: url(assets/img/img1.jpg) !important;
+	min-height: 550px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.custom-categoria h1 {
+	font-size: 40px;
+    line-height: 40px;
+    color: #265369;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+
+.custom-categoria a {
+	font-size: 35px;
+    line-height: 35px;
+    color: #7f4a92;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+.custom-categoria p {
+	font-size: 17px;
+    line-height: 17px;
+    color: #969696;
+    font-family: 'Raleway';
+}
+.custom-categoria img {
+	width: 100%;
+    height: 450px;
+}
+
+.custom-categoria-padding {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }

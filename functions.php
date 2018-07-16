@@ -68,39 +68,6 @@ class Walker_Nav_Menu_Dropdown extends Walker_Nav_Menu{
   }
 }
 
-
-function custom_post_type_BannerSlide() {
-  $labels = array(
-    'name'                => _x( 'BannerSlide', 'Post Type General Name', 'text_domain' ),
-    'singular_name'       => _x( 'BannerSlide', 'Post Type Singular Name', 'text_domain' ),
-    'menu_name'           => __( 'Banner Slide','text_domain' ),
-  );
-
-  $args = array(
-
-    'label'                 =>  __( 'BannerSlide', 'text_domain' ),
-    'description'           =>  __( 'Product information pages', 'text_domain' ),
-    'labels'                =>  $labels,
-    'taxonomies'            =>  array( ),
-    'hierarchical'          =>  false,
-    'public'                =>  true,
-    'show_ui'               =>  true,
-    'show_in_menu'          =>  true,
-    'show_in_nav_menus'     =>  true,
-    'show_in_admin_bar'     =>  true,
-    'menu_position'         =>  5,
-    'can_export'            =>  true,
-    'has_archive'           =>  true,
-    'exclude_from_search'   =>  false,
-    'publicly_queryable'    =>  true,
-    'capability_type'       =>  'page',
-    'supports'              =>  array('title', 'editor', 'post-formats')
-  );
-  
-  register_post_type( 'BannerSlide', $args );
-}
-add_action( 'init', 'custom_post_type_BannerSlide', 0 );
-
 function custom_post_type_duvidasFrequentes() {
 
   $labels = array(

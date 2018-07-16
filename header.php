@@ -39,7 +39,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/contato-telefone.svg">
 					</span>
 					<span>
-						(41) 99999-8888 
+						(47) 3467-7079
 					</span>				
 				</div>
 				<div class="col-md-2 custom-banner-2-img2 custom-banner-2-padding-cols">	
@@ -47,7 +47,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/whatsapp.png">
 					</span>					
 					<span>
-						(41) 99999-8888 
+						(47) 8848-5920
 					</span>
 				</div>
 				<div class="col-md-4 custom-banner-2-img2 custom-banner-2-padding-cols">												
@@ -77,9 +77,7 @@
 							<ul class="navbar-nav">
 								<?php
 									$items_menu = wp_get_nav_menu_items('main-menu');
-
 									if (!empty($items_menu)) {
-
 										foreach ($items_menu as $menu) {
 								?>
 										<li class="nav-item menu-item-header1">
