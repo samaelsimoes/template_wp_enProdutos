@@ -106,16 +106,15 @@
                         <?php
                             $args = array
                                 (
-                                'post_type' => 'post',
-                                'order' => 'DSC',
-                                'posts_per_page' => '60',
-                                'paged' => $paged,
+                                'post_type'      => 'post',
+                                'order'          => 'DESC',
+                                'posts_per_page' => '12',
+                                'paged'          => $paged,
                             );
                                 $query = new WP_Query($args);
                                 if ($query->have_posts()) {
                                     while ($query->have_posts()) {
                                         $query->the_post();{
-
                                             $thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
                         ?>
                             <div class="col-md-3 custom-img-produtos custom-col-produtos ">
@@ -166,8 +165,23 @@
                             }
                         ?>
                     </div>
+                    <?php
+                        if ( $query->max_num_pages > 1 ) {
+                        ?>
+                        <div class="row">
+                                <div class="col">
+                                    <?php previous_posts_link('página anterior', $query->max_num_pages) ?> &nbsp;
+                                </div>
+                                <div class="col align-right">
+                                    <?php next_posts_link('próxima página', $query->max_num_pages) ?>
+                                </div>
+                        </div>
+                    <?php 
+                        } 
+                        wp_reset_postdata();
+                    ?>
                 </div>
-            </div>
+            </div>           
         </div>
     </section>
     <?php include 'footer.php'?>

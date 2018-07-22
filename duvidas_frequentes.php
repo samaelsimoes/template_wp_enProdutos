@@ -13,4 +13,4 @@ get_header(); ?>
 	</div>
 </section>
 
-<?php include('contatoS.php') ?>
+<?php include('footer.php') ?>

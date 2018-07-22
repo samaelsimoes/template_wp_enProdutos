@@ -39,8 +39,7 @@ get_header(); ?>
 			} 
 			
 			wp_reset_postdata();
-		?>
-			<?php
+		
 			//navigation 
 			if ( $query->max_num_pages > 1 ) { ?>
 			<div class="row">

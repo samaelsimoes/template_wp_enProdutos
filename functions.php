@@ -102,4 +102,40 @@ function custom_post_type_duvidasFrequentes() {
 }
 
 add_action( 'init', 'custom_post_type_duvidasFrequentes', 0 );
+
+
+function custom_post_type_blog() {
+
+  $labels = array(
+
+    'name'                => _x( 'blog', 'Post Type General Name', 'text_domain' ),
+    'singular_name'       => _x( 'blog', 'Post Type Singular Name', 'text_domain' ),
+    'menu_name'           => __( 'Blog','text_domain' ),
+  );
+
+  $args = array(
+
+    'label'               => __( 'blog', 'text_domain' ),
+    'description'         => __( 'Product information pages', 'text_domain' ),
+    'labels'              => $labels,
+    'taxonomies'          => array( ),
+    'hierarchical'        => false,
+    'public'              => true,
+    'show_ui'             => true,
+    'show_in_menu'        => true,
+    'show_in_nav_menus'   => true,
+    'show_in_admin_bar'   => true,
+    'menu_position'       => 5,
+    'can_export'          => true,
+    'has_archive'         => true,
+    'exclude_from_search' => false,
+    'publicly_queryable'  => true,
+    'capability_type'     => 'page',
+    'supports'        => array('title', 'editor', 'post-formats')
+  );
+  
+  register_post_type( 'blog', $args );
+}
+
+add_action( 'init', 'custom_post_type_blog', 0 );
 ?>
