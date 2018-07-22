@@ -20,11 +20,9 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="row custom-padding-produtos">
 									<div class="col">
 										<nav class="nav flex-column custom-menu-produto">
-
 											<?php
 												$items_menu_produtos = wp_get_nav_menu_items('menu-produtos');
 												if (!empty($items_menu_produtos)) {
@@ -79,21 +77,27 @@
 									</div>
 								</div>
 
-								<a href="#" class="card-link">Mesa de sinuca</a>
-								<a href="#" class="card-link">Acessórios</a>
+								<a href="http://localhost/enProdutos/categoria/mesa-de-sinuca/" class="card-link">Mesa de sinuca</a>
+								<a href="http://localhost/enProdutos/categoria/acessorios/" class="card-link">Acessórios</a>
 
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 			<div class="col-sm-10">
-
 				<div class="row">
 					<div class="col" style="padding-top: 15px;">
 						<h1> 
-							<?php echo $objeto->name; ?> 
+							<?php 
+								if( $objeto->name == "Acessórios" ) {
+									echo $objeto->name;
+								} else if( $objeto->name == "Bolinhas" || $objeto->name == "Tacos" ) {
+									echo  ' Acessórios / ' . $objeto->name;	
+								} else {
+									echo $objeto->name;
+								}; 
+							?> 
 						</h1>
 						<hr class="custom-efeito-titulo-menu">
 					</div>
@@ -101,7 +105,6 @@
 				<div class="row">
 					<?php
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
 						$poucas_paginas = new WP_Query(
 							array(
 								'posts_per_page' => '12',
@@ -115,7 +118,7 @@
 								$poucas_paginas->the_post();{
 									?>
 										<div class="col-md-3 custom-img-produtos custom-col-produtos">
-											<div class="border" style="height: 600px;">
+											<div class="border" style="height: 745px;">
 												<div class="row">
 													<div class="col">
 														<a href="<?php the_permalink();?>">
@@ -209,7 +212,7 @@
 					<?php 
 						if( !function_exists('wp_pagenavi') ){
 					?>
-						<div class="col text-left custom-bottom-pag-bt custom-padding-bottton-pag">
+						<div class="col-md-6 text-left custom-bottom-pag-bt custom-padding-bottton-pag">
 							<ul>
 								<li>
 									<?php 
@@ -218,7 +221,7 @@
 								</li>
 							</ul>	
 						</div>
-						<div class="col text-right custom-bottom-pag-bt custom-padding-bottton-pag">
+						<div class="col-md-6 text-right custom-bottom-pag-bt custom-padding-bottton-pag">
 							<ul>
 								<li>
 									<?php 

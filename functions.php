@@ -104,18 +104,18 @@ function custom_post_type_duvidasFrequentes() {
 add_action( 'init', 'custom_post_type_duvidasFrequentes', 0 );
 
 
-function custom_post_type_blog() {
+function custom_post_type_conteudos() {
 
   $labels = array(
 
-    'name'                => _x( 'blog', 'Post Type General Name', 'text_domain' ),
-    'singular_name'       => _x( 'blog', 'Post Type Singular Name', 'text_domain' ),
+    'name'                => _x( 'conteudos', 'Post Type General Name', 'text_domain' ),
+    'singular_name'       => _x( 'conteudos', 'Post Type Singular Name', 'text_domain' ),
     'menu_name'           => __( 'Blog','text_domain' ),
   );
 
   $args = array(
 
-    'label'               => __( 'blog', 'text_domain' ),
+    'label'               => __( 'conteudos', 'text_domain' ),
     'description'         => __( 'Product information pages', 'text_domain' ),
     'labels'              => $labels,
     'taxonomies'          => array( ),
@@ -134,8 +134,44 @@ function custom_post_type_blog() {
     'supports'        => array('title', 'editor', 'post-formats')
   );
   
-  register_post_type( 'blog', $args );
+  register_post_type( 'conteudos', $args );
 }
 
-add_action( 'init', 'custom_post_type_blog', 0 );
+add_action( 'init', 'custom_post_type_conteudos', 0 );
+
+
+function custom_post_type_quemSomos() {
+
+  $labels = array(
+
+    'name'                => _x( 'QuemSomos', 'Post Type General Name', 'text_domain' ),
+    'singular_name'       => _x( 'QuemSomos', 'Post Type Singular Name', 'text_domain' ),
+    'menu_name'           => __( 'QuemSomos','text_domain' ),
+  );
+
+  $args = array(
+
+    'label'               => __( 'QuemSomos', 'text_domain' ),
+    'description'         => __( 'Product information pages', 'text_domain' ),
+    'labels'              => $labels,
+    'taxonomies'          => array( ),
+    'hierarchical'        => false,
+    'public'              => true,
+    'show_ui'             => true,
+    'show_in_menu'        => true,
+    'show_in_nav_menus'   => true,
+    'show_in_admin_bar'   => true,
+    'menu_position'       => 5,
+    'can_export'          => true,
+    'has_archive'         => true,
+    'exclude_from_search' => false,
+    'publicly_queryable'  => true,
+    'capability_type'     => 'page',
+    'supports'        => array('title', 'editor', 'post-formats')
+  );
+  
+  register_post_type( 'quemSomos', $args );
+}
+
+add_action( 'init', 'custom_post_type_quemSomos', 0 );
 ?>

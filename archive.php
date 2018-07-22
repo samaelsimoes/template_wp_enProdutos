@@ -39,9 +39,8 @@ get_header(); ?>
 			} 
 			
 			wp_reset_postdata();
-		
-			//navigation 
-			if ( $query->max_num_pages > 1 ) { ?>
+			if ( $query->max_num_pages > 1 ) {
+		 ?>
 			<div class="row">
 					<div class="col span-1-2 custom-blog-nav">
 						<?php previous_posts_link('página anterior', $query->max_num_pages) ?> &nbsp;

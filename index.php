@@ -1,14 +1,7 @@
 <?php get_header();?>
 
-<?php include 'section-inf.php'?>
-<!--
-    <section class="">
-        <div class="row">
-            <div class="col">
-                <img class="d-block w-100" src="<?php // echo get_template_directory_uri(); ?>/assets/img/img1.jpg"/>
-            </div>
-        </div>        
-    </section> -->
+    <?php include 'section-inf.php'?>
+
     <div class="custom-paralax"> </div>
 
     <section class="custom-text custom-padding-section custom-banner-4-cor custom-produtos">
@@ -85,8 +78,8 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="card-link">Mesa de sinuca</a>
-                                    <a href="#" class="card-link">Acessórios</a>
+                                    <a href="http://localhost/enProdutos/categoria/mesa-de-sinuca/" class="card-link">Mesa de sinuca</a>
+								    <a href="http://localhost/enProdutos/categoria/acessorios/" class="card-link">Acessórios</a>
 
                                 </div>
                             </div>
@@ -167,15 +160,23 @@
                     </div>
                     <?php
                         if ( $query->max_num_pages > 1 ) {
-                        ?>
-                        <div class="row">
-                                <div class="col">
-                                    <?php previous_posts_link('página anterior', $query->max_num_pages) ?> &nbsp;
-                                </div>
-                                <div class="col align-right">
-                                    <?php next_posts_link('próxima página', $query->max_num_pages) ?>
-                                </div>
-                        </div>
+                    ?>
+                    <div class="row">
+                            <div class="col-md-6 text-left custom-bottom-pag  custom-bottom-pag-bt custom-padding-bottton-pag">
+                                <ul>
+                                    <li>
+                                        <?php previous_posts_link('página anterior', $query->max_num_pages) ?>
+                                    </li>
+                                </ul>        
+                            </div>
+                            <div class="col-md-6 text-right custom-bottom-pag  custom-bottom-pag-bt custom-padding-bottton-pag">
+                                <ul>
+                                    <li>
+                                        <?php next_posts_link('próxima página', $query->max_num_pages) ?>
+                                    </li>
+                                </ul>        
+                            </div>
+                    </div>
                     <?php 
                         } 
                         wp_reset_postdata();
